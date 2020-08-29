@@ -13,9 +13,8 @@ barcolor <- "#E6E6FA" # Lavender
 set.seed(33377561)
 ```
 
-```{r load_package, include=FALSE}
-# load R/broman package
-#library(gapminder)
+```{r load_packages, include=FALSE}
+library(gapminder)
 library(ggplot2)
 ```
 
