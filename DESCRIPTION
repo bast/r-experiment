@@ -11,7 +11,7 @@ Description: Your compendium description
 License: What license it uses
 Depends:
     rmarkdown
-Depends:
+Imports:
     gapminder
 Encoding: UTF-8
 LazyData: true
