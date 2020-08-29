@@ -12,6 +12,15 @@ License: What license it uses
 Depends:
     rmarkdown
 Imports:
-    gapminder
+    gapminder,
+    cowplot,
+    egg,
+    ggforce,
+    ggrepel,
+    ggridges,
+    sf,
+    treemapify,
+    colorspace,
+    colorblindr
 Encoding: UTF-8
 LazyData: true
