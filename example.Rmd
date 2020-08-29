@@ -16,6 +16,7 @@ set.seed(33377561)
 ```{r load_package, include=FALSE}
 # load R/broman package
 #library(gapminder)
+library(ggplot2)
 ```
 
 ```{r simple_plot}
