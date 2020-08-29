@@ -12,6 +12,6 @@ License: What license it uses
 Depends:
     rmarkdown
 Depends:
-    broman
+    gapminder
 Encoding: UTF-8
 LazyData: true
