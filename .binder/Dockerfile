@@ -10,3 +10,4 @@ USER ${NB_USER}
 RUN R -e 'install.packages("renv"); renv::restore()'
 
 #RUN rm DESCRIPTION.1; exit 0
+RUN exit 0
