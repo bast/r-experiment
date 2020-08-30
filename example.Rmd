@@ -3,11 +3,11 @@ title: "Fruit snack analysis"
 author: "Karl Broman"
 date: 2015-02-14
 #output: html_document
-output:
-  pdf_document:
-    fig_width: 7
-    fig_height: 6
-    fig_caption: true
+#output:
+#  pdf_document:
+#    fig_width: 7
+#    fig_height: 6
+#    fig_caption: true
 ---
 
 ```{r options, include=FALSE}
@@ -39,9 +39,7 @@ ggsave("myplot.png")
 
 A text ...
 
-(ref:butterfat-densitites) Density estimates of the butterfat percentage in the milk of four cattle breeds. Data Source: Canadian Record of Performance for Purebred Dairy Cattle
-
-```{r butterfat-densitites, fig.cap='(ref:butterfat-densitites)'}
+```{r butterfat-densitites, fig.cap='Some caption in here'}
 p <- ggplot(data = midwest,
             mapping = aes(x = area, fill = state, color = state))
 p + geom_density(alpha = 0.3) + theme_bw()
