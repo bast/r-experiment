@@ -21,6 +21,8 @@ date: 2015-02-14
 ```{r load_packages, include=FALSE}
 library(gapminder)
 library(ggplot2)
+
+theme_set(theme_bw())
 ```
 
 ```{r simple_plot, fig.cap="this is figure 3.16 from https://socviz.co/makeplot.html"}
@@ -33,6 +35,20 @@ p + geom_point(mapping = aes(color = continent)) +
 ```{r saving_plot, include=FALSE}
 ggsave("myplot.png")
 ```
+```
+
+This is 4.4 in https://socviz.co/groupfacettx.html:
+
+```{r}
+p <- ggplot(data = gapminder, mapping = aes(x = year, y = gdpPercap))
+p + geom_line(color="gray70", aes(group = country)) +
+    geom_smooth(size = 1.1, method = "loess", se = FALSE) +
+    scale_y_log10(labels=scales::dollar) +
+    facet_wrap(~ continent, ncol = 5) +
+    labs(x = "Year",
+         y = "GDP per capita",
+         title = "GDP per capita on Five Continents")
+```
 
 
 ## Testing something else
@@ -42,5 +58,5 @@ A text ...
 ```{r butterfat-densitites, fig.cap='Some caption in here'}
 p <- ggplot(data = midwest,
             mapping = aes(x = area, fill = state, color = state))
-p + geom_density(alpha = 0.3) + theme_bw()
+p + geom_density(alpha = 0.3)
 ```
