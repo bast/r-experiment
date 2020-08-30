@@ -7,6 +7,6 @@ RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_USER}
 
 #RUN wget https://github.com/bast/r-experiment/raw/master/DESCRIPTION && R -e "options(repos = list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/2020-08-28/')); devtools::install_deps()"
-RUN R -e "renv::restore()"
+RUN R -e 'install.packages("renv"); renv::restore()'
 
 #RUN rm DESCRIPTION.1; exit 0
