@@ -35,6 +35,7 @@ Imports:
     srvyr,
     viridis,
     viridisLite,
-    devtools
+    devtools,
+    socviz
 Encoding: UTF-8
 LazyData: true

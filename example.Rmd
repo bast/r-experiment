@@ -19,16 +19,13 @@ library(ggplot2)
 ```
 
 ```{r simple_plot}
-#fs <- read.csv("../Data/fruit_snacks.csv")
-#fs <- fs[,-1] # drop the column with IDs
-#n_per_package <- rowSums(fs)
 p <- ggplot(data = gapminder,
 	    mapping = aes(x = gdpPercap, y = lifeExp))
 
 p + geom_point()
 ```
 
-```{r simple_plot, include=FALSE}
+```{r saving_plot, include=FALSE}
 ggsave("myplot.png")
 ```
 
