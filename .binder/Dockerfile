@@ -1,5 +1,5 @@
-FROM rocker/binder:3.6.3
-#FROM rocker/binder:4.0.2
+#FROM rocker/binder:3.6.3
+FROM rocker/binder:4.0.2
 LABEL maintainer='your_name'
 #USER root
 #COPY . ${HOME}
