@@ -2,7 +2,12 @@
 title: "Fruit snack analysis"
 author: "Karl Broman"
 date: 2015-02-14
-output: html_document
+#output: html_document
+output:
+  pdf_document:
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
 ---
 
 ```{r options, include=FALSE}
@@ -39,5 +44,5 @@ A text ...
 ```{r butterfat-densitites, fig.cap='(ref:butterfat-densitites)'}
 p <- ggplot(data = midwest,
             mapping = aes(x = area, fill = state, color = state))
-p + geom_density(alpha = 0.3)
+p + geom_density(alpha = 0.3) + theme_bw()
 ```
