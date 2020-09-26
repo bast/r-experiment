@@ -23,3 +23,4 @@ $ Rscript --vanilla create-lock.R
 - https://bbc.github.io/rcookbook/
 - https://ajstewartlang.github.io/SIPS_2019/SIPS_presentation.html
 - https://rstudio.github.io/renv/
+- https://ericbryantphd.com/2020/01/06/reproducible-environments-in-r/
